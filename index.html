@@ -8,21 +8,33 @@
 <title>Simulador de nota</title>
 <link rel="icon" href="favicon.ico" type="image/x-icon" >
 <link rel="stylesheet" href="styles/styles.css" >
-<script src="script.js" defer></script>
+<script src="scripts/script.js" defer></script>
 </head>
 
 <body>
-	<header><h1>Simule sua Nota</h1></header>
-	<main>
+	<header class="row" ><h1>Calcule sua Nota</h1></header>
+	<main class="row">
 		<h2>Preencha com suas Notas:</h2>
-		<form method="post" action="script.js" name="simulador">
-		<input type="number" id="vp" name="parcial" placeholder="VP" >
-		<input type="number" id="vg" name="global" placeholder="VG" >
-		<input type="number" id="ntd" name="ntd" placeholder="NTD" >
-		<input type="number" id="media" name="media" placeholder="Média" >
-		<input type="submit" name="submit" id="send" value="Enviar" >
+		<form method="post" action="scripts/script.js" name="calculadora" >
+			<div class="form-group">
+				<label for="parcial">VP:</label>
+				<input type="number" id="vp" name="parcial" placeholder="Nota Parcial" >
+			</div>
+			<div class="form-group">
+				<label for="globla">VG:</label>
+				<input type="number" id="vg" name="global" placeholder="Nota Global" >
+			</div>
+			<div class="form-group">
+				<label for="ntd">NTD:</label>
+				<input type="number" id="ntd" name="ntd" placeholder="Nota extra" >
+			</div>
+			<div class="form-group" >
+				<label for="media">Média:</label>
+				<input type="number" id="media" name="media" placeholder="Média das Notas" >
+			</div>
+			<input type="submit" name="submit" id="send" value="Calcular" class="btn" >
 		</form>
 	</main>
-	<footer></footer>
+	<footer class="row"></footer>
 </body>
 </html>
