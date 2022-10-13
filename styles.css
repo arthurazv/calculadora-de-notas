@@ -8,8 +8,7 @@ body {
 	display: grid;
 	grid-template-rows: 1fr 1fr 1fr;
 	grid-template-columns: 1fr;
-	min-height: 100vh;
-	max-height: 100vh;
+	min-height: 80vh;
 	font-family: monospace;
 }
 
@@ -76,7 +75,7 @@ label {
 }
 
 .conteiner {
-	width: 32%;
+	width: 34%;
 	padding: 25px 25px 25px 25px;
 	border: 1px solid #999;
 }
