@@ -9,7 +9,7 @@ body {
 	grid-template-rows: 1fr 1fr 1fr;
 	grid-template-columns: 1fr;
 	min-height: 80vh;
-	max-height: 100vh;
+	max-height: 110vh;
 	font-family: monospace;
 }
 
