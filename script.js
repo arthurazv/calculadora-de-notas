@@ -14,7 +14,7 @@ btn.addEventListener("click", function(e) {
  const nota2 = parseInt(vg.value);
  const nota3 = parseInt(ntd.value);
  
- if(nota1 <= 10 && nota1 >= 0 && nota2 <= 10 && nota3 <= 10 && nota3 >= 0 && media.value == 0) {
+ if(nota1 <= 10 && nota1 >= 0 && nota2 <= 10 && nota3 <= 10 && nota3 >= 0) {
  media.value = (nota1 * 2 + nota2 * 2 + nota3)/5;
  	if(media.value < 7) {
 		 media.style.color = "red";
