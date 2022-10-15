@@ -19,7 +19,7 @@ const switchToFb = () => {
 	school.name = "fb";
 	
 	const labelParcial = document.getElementById("labelParcial");
-	const labelGlobal = document.getElementById("labelGlobal");å
+	const labelGlobal = document.getElementById("labelGlobal");
 	const labelPontos = document.getElementById("labelExtra");
 	
 	labelParcial.textContent = "VP:";
