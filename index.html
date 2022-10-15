@@ -14,28 +14,41 @@
 <body>
 	<header class="row" ><h1 class="heading">Calcule sua Nota</h1></header>
 	<main class="row">
+		
 		<div class="conteiner">
-		<h2 class="heading" >Preencha com suas Notas:</h2>
-		<form method="post" action="script.js" name="calculadora" class="form-calculator">
-			<div class="form-group">
-				<label for="parcial">VP:</label>
-				<input type="number" id="vp" name="parcial" placeholder="Nota Parcial" >
+			<div id="schoolChanger">
+				<h3>Escolha sua Escola:</h3>
+				<button type="button" onclick="switchToFb()">FB</button>
+				<button type="button" onclick="switchToLf()">CLF</button>
 			</div>
-			<div class="form-group">
-				<label for="globla">VG:</label>
-				<input type="number" id="vg" name="global" placeholder="Nota Global" >
-			</div>
-			<div class="form-group">
-				<label for="ntd">NTD:</label>
-				<input type="number" id="ntd" name="ntd" placeholder="Nota extra" >
-			</div>
-			<div class="form-group" >
-				<label for="media">Média:</label>
-				<input type="number" id="media" name="media" placeholder="Média das Notas" >
-			</div>
-			<input type="submit" name="submit" id="send" value="Calcular" class="btn" >
-		</form>
+			<h2 class="heading" >Preencha com suas Notas:</h2>
+			<form method="post" action="scripts/script.js" name="calculadora" class="form-calculator">
+				
+				<div class="form-group">
+					<label for="parcial"> <span id="labelParcial">VP:</span> </label>
+					<input type="number" id="parcial" name="parcial" placeholder="Nota Parcial" >
+				</div>
+				
+				<div class="form-group">
+					<label for="global"> <span id="labelGlobal">VG:</span> </label>
+					<input type="number" id="global" name="global" placeholder="Nota Global" >
+				</div>
+				
+				<div class="form-group">
+					<label for="ntd"> <span id="labelExtra">NTD:</span> </label>
+					<input type="number" id="extra" name="ntd" placeholder="Nota extra" >
+				</div>
+				
+				<div class="form-group" >
+					<label for="media">Média:</label>
+					<input type="number" id="media" name="media" placeholder="Média das Notas" >
+				</div>
+				
+				<input type="submit" name="submit" id="send" value="Calcular" class="btn">
+				
+			</form>
 		</div>
+		
 	</main>
 	<footer class="row"></footer>
 </body>
